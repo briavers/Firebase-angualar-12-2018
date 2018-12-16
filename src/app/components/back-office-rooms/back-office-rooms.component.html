@@ -1,0 +1,142 @@
+<div class="container-fluid mt-5">
+  
+  <div class="row">
+    <div class="col-12">
+      <h1>Create a news item</h1>
+    </div>
+  </div>
+
+
+
+
+
+<form [formGroup]="createRoomForm">
+  <div class="form-group">
+    <label> Author</label>
+    <select class="custom-select" formControlName="Room">
+      <option value="a11">A-11</option>
+      <option value="a12">A-12</option>
+    </select>
+  </div>
+</form>
+  
+
+
+
+
+
+
+<form [formGroup]="EditRoomForm" *ngIf='classes'>
+ 
+  <div class="row">  
+    <div class="col-2">  </div>
+  <div class="col-2"> Maandag </div>
+  <div class="col-2"> Dinsdag </div>
+  <div class="col-2"> Woensdag </div>
+  <div class="col-2"> Donderdag </div>
+  <div class="col-2"> Vrijdag </div>
+  
+  </div>
+<div class="row" >
+    <div class="col-2"> <input type="text" formControlName="a1" class="form-control"> </div>
+    <div class="col-2"> <input type="text" formControlName="b1" class="form-control" value={{classes.b1}}> </div>
+    <div class="col-2"> <input type="text" formControlName="c1" class="form-control"> </div>
+    <div class="col-2"> <input type="text" formControlName="d1" class="form-control"> </div>
+    <div class="col-2"> <input type="text" formControlName="e1" class="form-control"> </div>
+    <div class="col-2"> <input type="text" formControlName="f1" class="form-control"> </div>
+  </div>
+
+
+<div class="row">
+  <div class="col-2"> <input type="text" formControlName="a2" class="form-control"> </div>
+  <div class="col-2"> <input type="text" formControlName="b2" class="form-control"> </div>
+  <div class="col-2"> <input type="text" formControlName="c2" class="form-control"> </div>
+  <div class="col-2"> <input type="text" formControlName="d2" class="form-control"> </div>
+  <div class="col-2"> <input type="text" formControlName="e2" class="form-control"> </div>
+  <div class="col-2"> <input type="text" formControlName="f2" class="form-control"> </div>
+</div>
+
+
+
+<div class="row">
+  <div class="col-2"> <input type="text" formControlName="a3" class="form-control"> </div>
+  <div class="col-2"> <input type="text" formControlName="b3" class="form-control"> </div>
+  <div class="col-2"> <input type="text" formControlName="c3" class="form-control"> </div>
+  <div class="col-2"> <input type="text" formControlName="d3" class="form-control"> </div>
+  <div class="col-2"> <input type="text" formControlName="e3" class="form-control"> </div>
+  <div class="col-2"> <input type="text" formControlName="f3" class="form-control"> </div>
+</div>
+
+
+
+<div class="row">
+  <div class="col-2"> <input type="text" formControlName="a4" class="form-control"> </div>
+  <div class="col-2"> <input type="text" formControlName="b4" class="form-control"> </div>
+  <div class="col-2"> <input type="text" formControlName="c4" class="form-control"> </div>
+  <div class="col-2"> <input type="text" formControlName="d4" class="form-control"> </div>
+  <div class="col-2"> <input type="text" formControlName="e4" class="form-control"> </div>
+  <div class="col-2"> <input type="text" formControlName="f4" class="form-control"> </div>
+</div>
+
+
+
+<div class="row">
+  <div class="col-2"> <input type="text" formControlName="a5" class="form-control"> </div>
+  <div class="col-2"> <input type="text" formControlName="b5" class="form-control"> </div>
+  <div class="col-2"> <input type="text" formControlName="c5" class="form-control"> </div>
+  <div class="col-2"> <input type="text" formControlName="d5" class="form-control"> </div>
+  <div class="col-2"> <input type="text" formControlName="e5" class="form-control"> </div>
+  <div class="col-2"> <input type="text" formControlName="f5" class="form-control"> </div>
+</div>
+
+
+
+<div class="row">
+  <div class="col-2"> <input type="text" formControlName="a6" class="form-control"> </div>
+  <div class="col-2"> <input type="text" formControlName="b6" class="form-control"> </div>
+  <div class="col-2"> <input type="text" formControlName="c6" class="form-control"> </div>
+  <div class="col-2"> <input type="text" formControlName="d6" class="form-control"> </div>
+  <div class="col-2"> <input type="text" formControlName="e6" class="form-control"> </div>
+  <div class="col-2"> <input type="text" formControlName="f6" class="form-control"> </div>
+</div>
+
+
+
+<div class="row">
+  <div class="col-2"> <input type="text" formControlName="a7" class="form-control"> </div>
+  <div class="col-2"> <input type="text" formControlName="b7" class="form-control"> </div>
+  <div class="col-2"> <input type="text" formControlName="c7" class="form-control"> </div>
+  <div class="col-2"> <input type="text" formControlName="d7" class="form-control"> </div>
+  <div class="col-2"> <input type="text" formControlName="e7" class="form-control"> </div>
+  <div class="col-2"> <input type="text" formControlName="f7" class="form-control"> </div>
+</div>
+
+
+
+<div class="row">
+  <div class="col-2"> <input type="text" formControlName="a8" class="form-control"> </div>
+  <div class="col-2"> <input type="text" formControlName="b8" class="form-control"> </div>
+  <div class="col-2"> <input type="text" formControlName="c8" class="form-control"> </div>
+  <div class="col-2"> <input type="text" formControlName="d8" class="form-control"> </div>
+  <div class="col-2"> <input type="text" formControlName="e8" class="form-control"> </div>
+  <div class="col-2"> <input type="text" formControlName="f8" class="form-control"> </div>
+</div>
+
+
+
+<div class="form-group">
+  <label class="error">{{errorMessage}}</label>
+</div>
+<button type="submit" (click)="tryPost(EditRoomForm.value)" class="btn btn-default">Update Leslokaal</button>
+</form>
+
+
+
+
+
+<div class="row mt-2" *ngFor="let news of classes | async">
+  <p>{{news}}</p>
+</div>
+
+
+</div>
