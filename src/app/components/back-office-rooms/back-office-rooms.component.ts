@@ -125,14 +125,14 @@ export class BackOfficeRoomsComponent implements OnInit {
         
       if (this.EditRoomForm == undefined ){
         this.EditRoomForm = this.fb.group({
-          a1: '',
-          a2: '',
-          a3: '',
-          a4: '',
-          a5: '',
-          a6: '',
-          a7: '',
-          a8: '',
+          a1: '8:45 - 9:45',
+          a2: '9:45 - 10:45',
+          a3: '11:00 - 12:00',
+          a4: '12:00 - 13:00',
+          a5: '13:00 - 14:00',
+          a6: '14:00 - 15:00',
+          a7: '15:00 - 16:00',
+          a8: '16:00 - 17:00',
           b1: '',
           b2: '',
           b3: '',

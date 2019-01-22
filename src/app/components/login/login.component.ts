@@ -34,7 +34,7 @@ export class LoginComponent {
     this.authService.doLogin(value)
       .then(res => {
         console.log('logged in')
-        this.router.navigate(['/backOffice']);
+        this.router.navigate(['/create-news']);
       }, err => {
         console.log(err);
         console.log("err try login");

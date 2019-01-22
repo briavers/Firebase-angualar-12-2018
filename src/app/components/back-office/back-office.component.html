@@ -15,26 +15,15 @@
         </div>
         
         <div class="form-group">
-          <label>Image Link</label>
-          <input type="text" formControlName="link" class="form-control">
-        </div>
-
-
-      
-        <div class="form-group">
-          <label> Author</label>
-          <select class="custom-select" formControlName="author">
-            <option value="Artevelde HS">Artevelde HS</option>
-            <option value="Stuvers">Stuvers</option>
-          </select>
-
+          <label for="file">Image:</label>
+          <input type="file" formControlName="file" (change)="upload($event)" accept=".png,.jpg" class="form-control"/>
         </div>
 
 
         <div class="form-group">
           <label class="error">{{errorMessage}}</label>
         </div>
-<button type="submit" (click)="tryPost(createNewsForm.value)" class="btn btn-default">Maak Nieuws Item</button>
+<button type="submit" (click)="tryPost()" class="btn btn-default">Maak Nieuws Item</button>
       </form>
     </div>
   </div>

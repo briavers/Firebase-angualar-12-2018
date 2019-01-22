@@ -1,20 +1,28 @@
-
 <div class="container-fluid mt-5" *ngIf="newsFeed">
-  <div class="row mt-2" *ngFor="let news of newsFeed | async">
-    <div class="col-4" >
-<img src={{news.image}} alt="foto vaan het nieuws" style="width:100%">
-      
+  <div class="card flex-row flex-wrap mt-2" *ngFor="let news of newsFeed | async | reverse">
+    
+    <div class="card-header border-0 col-3" *ngIf="news.image">
+      <img src={{news.image}} alt="foto vaan het nieuws" style="width:100%;" >
     </div>
-    <div class="col-8">
-      <div class="card bg-light mb-3">
-        <div class="card-header">{{news.title}}</div>
-        <div class="card-body">
-          <p class="card-text">{{news.body}}</p>
-<p class="card-text"><small class="text-muted">{{news.date | time }} by {{news.author}}</small></p>
-        </div>
-      </div>
+    
+    <div class="card-block px-2 col-9" *ngIf="news.image">
+      <h4 class="card-title">{{news.title}}</h4>
+      <p class="card-text">{{news.body}}</p>
+    </div>
+    
+    <div class="card-block px-2 col-12" *ngIf="!news.image">
+      <h4 class="card-title">{{news.title}}</h4>
+      <p class="card-text">{{news.body}}</p>
     </div>
 
+
+
+    
+    <div class="w-100"></div>
+    
+    <div class="card-footer w-100 text-muted">
+      {{news.date | time }} by {{news.author}}
+    </div>
+  
   </div>
 </div>
-

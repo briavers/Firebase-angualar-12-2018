@@ -44,4 +44,16 @@ doLogout(){
 }
 
 
+  getMe() {
+    return this.afAuth.auth.currentUser;
+  }
+  
+  updateName(data){
+    console.log(data)
+    return this.afAuth.auth.currentUser.updateProfile({
+      displayName: data.displayName,
+      photoURL: ''
+    });
+  }
+
 }

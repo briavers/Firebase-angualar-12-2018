@@ -5,12 +5,14 @@ import { LoginComponent } from './components/login/login.component';
 import { AuthGuard } from './auth/auth.guard';
 import { BackOfficeComponent } from './components//back-office/back-office.component';
 import { BackOfficeRoomsComponent } from './components/back-office-rooms/back-office-rooms.component';
+import { UpdateProfileComponent } from './components/update-profile/update-profile.component';
 
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'create-news', component: BackOfficeComponent, canActivate: [AuthGuard],  },
   { path: 'rooms', component: BackOfficeRoomsComponent, canActivate: [AuthGuard],  },
+  { path: 'profile', component: UpdateProfileComponent, canActivate: [AuthGuard],  },
   { path: 'login', component: LoginComponent },
   { path: '', component: HomeComponent },
  // { path: '*', component: HomeComponent },

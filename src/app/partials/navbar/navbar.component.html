@@ -10,6 +10,7 @@
 <a class="nav-item nav-link" href="/login" *ngIf="!loggedIn">Login</a>
 <a class="nav-item nav-link" href="/create-news" *ngIf="loggedIn">Creëer nieuws</a>
 <a class="nav-item nav-link" href="/rooms" *ngIf="loggedIn">Leslokalen</a>
+<a class="nav-item nav-link" href="/profile" *ngIf="loggedIn">Profile</a>
 <a class="nav-item nav-link" *ngIf="loggedIn" (click)="logOut()">logout</a>
     </div>
   </div>
